@@ -248,3 +248,5 @@ header nav[aria-label="Main navigation"] a[href="booking.html"]:is(:hover, [aria
 
 /* Fine outline around the subpage display headings. */
 .inner h1 { -webkit-text-stroke: .65px #fff; }
+
+.inner .lede { max-width: none; }
