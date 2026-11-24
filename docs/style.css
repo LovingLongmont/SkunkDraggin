@@ -116,7 +116,7 @@ header nav[aria-label="Main navigation"] {
   font-family: "Metal Mania", Georgia, serif;
   font-weight: 400;
   letter-spacing: .005em;
-  color: #dc4b13;
+  color: #ff0904;
   text-shadow: 0 2px 5px #000, 0 0 18px #000a;
 }
 .home-section, .inner {
@@ -215,17 +215,6 @@ header nav[aria-label="Main navigation"] a[href="booking.html"]:is(:hover, [aria
 .booking-email a { overflow-wrap: anywhere; }
 @media (max-width: 700px) { .booking-options { grid-template-columns: minmax(0, 1fr); } }
 
-@supports (background-clip: text) {
-  .inner h1 {
-    width: fit-content;
-    max-width: 100%;
-    background: linear-gradient(100deg, #bc2712, #dc4b13 58%, #c33512);
-    background-clip: text;
-    color: transparent;
-    text-shadow: none;
-    filter: drop-shadow(0 2px 2px #000);
-  }
-}
 
 @media (min-width: 701px) {
   .contact-layout:has(> .contact-art) { align-items: stretch; }
