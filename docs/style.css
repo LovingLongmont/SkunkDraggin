@@ -86,16 +86,19 @@ header nav[aria-label="Main navigation"] {
   .social-strip nav { justify-content: center; }
 }
 
-.social-strip { background: #ff0904; }
+.social-strip {
+  background: linear-gradient(100deg, #77160e 0%, #bc2712 28%, #dc4b13 48%, #c33512 62%, #7f1b10 84%, #491410 100%);
+  border-block: 1px solid #f2863b70;
+}
 .social-strip nav { gap: clamp(2px, 1vw, 12px); }
 .social-strip .social-icon {
   display: inline-grid;
   place-items: center;
   inline-size: 31px;
-  block-size: 34px;
+  block-size: 36px;
   color: #fff;
 }
-.social-icon svg { width: 17px; height: 17px; }
+.social-icon svg { width: 21px; height: 21px; filter: drop-shadow(0 1px 1px #40100d); }
 .social-strip a.social-icon:hover { background: #0003; }
 .social-strip a.social-icon:focus-visible { outline-color: #181010; outline-offset: -3px; }
 @media (max-width: 350px) {
