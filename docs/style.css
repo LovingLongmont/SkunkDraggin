@@ -160,3 +160,19 @@ header nav[aria-label="Main navigation"] a[href="booking.html"]:is(:hover, [aria
   font-size: clamp(.75rem, 3.5vw, 1rem);
   line-height: 1.2;
 }
+
+.hero h1 {
+  position: relative;
+  isolation: isolate;
+}
+.hero h1::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -40% -7%;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgb(0 0 0 / 47%) 24%, rgb(0 0 0 / 29%) 53%, transparent 75%);
+}
+@media (max-width: 700px) {
+  .hero h1::before { inset-inline: -3%; }
+}
