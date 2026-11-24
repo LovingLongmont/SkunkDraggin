@@ -176,3 +176,28 @@ header nav[aria-label="Main navigation"] a[href="booking.html"]:is(:hover, [aria
 @media (max-width: 700px) {
   .hero h1::before { inset-inline: -3%; }
 }
+
+.band-form { display: grid; gap: 16px; }
+.band-form .form-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.band-form label { display: grid; gap: 5px; font-weight: 700; }
+.band-form label > span, .form-notice { color: var(--muted); font-weight: 400; }
+.band-form input:not([type="checkbox"]), .band-form textarea {
+  width: 100%;
+  min-width: 0;
+  background: #0e0c0c;
+  color: var(--ink);
+  border: 1px solid #ffffff46;
+  padding: 9px;
+  border-radius: 5px;
+  font: inherit;
+  font-weight: 400;
+}
+.band-form textarea { resize: vertical; }
+.band-form .photo-consent { grid-template-columns: auto minmax(0, 1fr); align-items: start; gap: 9px; }
+.photo-consent input { margin-top: .35em; accent-color: #dd483a; }
+.band-form button { justify-self: start; color: var(--ink); cursor: pointer; font: inherit; font-weight: 750; }
+.band-form button:disabled { opacity: .6; cursor: default; }
+.band-form .form-status:empty { display: none; }
+.contact-art { margin: 20px 0; }
+.contact-art img { width: 100%; height: auto; display: block; border: 1px solid #ffffff36; border-radius: 8px; }
+@media (max-width: 540px) { .band-form .form-fields { grid-template-columns: minmax(0, 1fr); } }
