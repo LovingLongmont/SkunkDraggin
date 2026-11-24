@@ -201,7 +201,7 @@ header nav[aria-label="Main navigation"] a[href="booking.html"]:is(:hover, [aria
 .contact-art { margin: 20px 0; }
 .contact-art img { width: 100%; height: auto; display: block; border: 1px solid #ffffff36; border-radius: 8px; }
 @media (max-width: 540px) { .band-form .form-fields { grid-template-columns: minmax(0, 1fr); } }
-.contact-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .8fr); gap: 18px; align-items: start; }
+.contact-layout { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1fr); gap: 18px; align-items: start; }
 .contact-layout .contact-art { margin: 0; }
 .contact-layout .band-form { margin-top: 12px; }
 @media (max-width: 1000px) { .contact-layout .form-fields { grid-template-columns: minmax(0, 1fr); } }
