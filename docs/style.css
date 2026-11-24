@@ -226,3 +226,22 @@ header nav[aria-label="Main navigation"] a[href="booking.html"]:is(:hover, [aria
     filter: drop-shadow(0 2px 2px #000);
   }
 }
+
+@media (min-width: 701px) {
+  .contact-layout:has(> .contact-art) { align-items: stretch; }
+  .contact-layout > .contact-art { position: relative; }
+  .contact-layout > .contact-art::before {
+    content: "";
+    display: block;
+    aspect-ratio: 2 / 3;
+  }
+  .contact-layout > .contact-art img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    object-fit: contain;
+    background: #0e0c0c;
+  }
+}
+.contact-layout > .band-form { margin: 0; align-content: start; }
+.contact-layout > .band-form .form-notice { margin: 0; }
