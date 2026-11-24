@@ -209,3 +209,8 @@ header nav[aria-label="Main navigation"] a[href="booking.html"]:is(:hover, [aria
   .contact-layout { grid-template-columns: minmax(0, 1fr); }
   .contact-layout .contact-art { max-width: 370px; }
 }
+
+.booking-options { margin-top: 24px; grid-template-columns: minmax(0, 1fr) minmax(0, .8fr); }
+.booking-options > .card { margin-top: 0; }
+.booking-email a { overflow-wrap: anywhere; }
+@media (max-width: 700px) { .booking-options { grid-template-columns: minmax(0, 1fr); } }
