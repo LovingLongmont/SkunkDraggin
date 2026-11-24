@@ -104,3 +104,30 @@ header nav[aria-label="Main navigation"] {
 @media (max-width: 350px) {
   .social-strip .social-icon { inline-size: 27px; }
 }
+
+@font-face {
+  font-family: "Metal Mania";
+  src: url("assets/metal-mania.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.inner h1 {
+  font-family: "Metal Mania", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: .005em;
+  color: #ff6356;
+  text-shadow: 0 2px 5px #000, 0 0 18px #000a;
+}
+.home-section, .inner {
+  background: rgb(0 0 0 / 62%);
+  border-color: #ffffff30;
+}
+.feature, .show, .card, article {
+  background: rgb(0 0 0 / 63%);
+  border-color: #ffffff35;
+}
+.date { background: rgb(0 0 0 / 55%); }
+.archive-flyer img, .video { background: rgb(0 0 0 / 55%); }
+.button.secondary { background: rgb(0 0 0 / 68%); border-color: #ffffff4a; }
+.button.secondary:hover { background: rgb(32 32 32 / 86%); }
